@@ -4,10 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bkash-transaction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script type="module" src="/main.js"></script>
 </head>
 <body>
-    <button id="btn">click</button>
+    <button class="payment-btn"><i class="fa fa-plus"></i></button>
+
+    <div class="main-wrap">
+        <div class="brand">
+            <img src="https://freelogopng.com/images/all_img/1656234841bkash-icon-png.png" alt="bkash-logo">
+            <h3>bKash Transaction App</h3>
+        </div>
+        <div class="user">
+            <img src="https://avatars.githubusercontent.com/u/138699187?v=4" alt="user-image">
+            <div class="info">
+                <h4>Md Imran Hossen</h4>
+                <div class="balance"><span>1200 BDT</span></div>
+            </div>
+        </div>
+        <div class="transaction-area">
+            <div class="search">
+                <div class="search-trans">
+                    <form action="">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input type="text" placeholder="Search Transaction">
+                    </form>
+                </div>
+                <div class="search-filter">
+                    <button><i class="fa fa-bank"></i></button>
+                </div>
+            </div>
+            <div class="transaction-list">
+                <div class="transaction-item">
+                    <div class="trans-info">
+                        <img src="https://avatars.githubusercontent.com/u/3949434?v=4" alt="">
+                        <div class="details">
+                            <span class="trans-type">Send Money</span>
+                            <span class="trans-user">Md Imran Hossen</span>
+                            <span class="trans-id">TrxID: AF$5&23456</span>
+                        </div>
+                    </div>
+                    <div class="trans-data">
+                        <span class="trans-amount">+2000 BDT</span>
+                        <span class="trans-time">10:00 AM 2/18/2025</span>
+                    </div>
+                </div>
+                <div class="transaction-item">
+                    <div class="trans-info">
+                        <img src="https://avatars.githubusercontent.com/u/3949434?v=4" alt="">
+                        <div class="details">
+                            <span class="trans-type">Send Money</span>
+                            <span class="trans-user">Md Imran Hossen</span>
+                            <span class="trans-id">TrxID: AF$5&23456</span>
+                        </div>
+                    </div>
+                    <div class="trans-data">
+                        <span class="trans-amount">+2000 BDT</span>
+                        <span class="trans-time">10:00 AM 2/18/2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>

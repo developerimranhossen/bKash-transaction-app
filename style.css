@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    background: #f2f4f7;
+}
+
+.payment-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #e1136e;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.main-wrap {
+    width: 400px;
+    height: 400px;
+    margin: 50px auto 0;
+    border-radius: 10px;
+}
+.main-wrap .brand {
+    text-align: center;
+}
+.main-wrap .brand img {
+    width: 100px;
+}
+.main-wrap .brand h3 {
+    font-size: 20px;
+}
+.user {
+    display: flex;
+    gap: 15px;
+    background-color: #e1136e;
+    padding: 15px 10px;
+    border-radius:  10px 10px 0 0;
+}
+
+.user img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user .info h4 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.user .info .balance {
+    background-color: #fff;
+    padding: 7px 5px;
+    border-radius: 30px;
+}
+.user .info .balance span {
+    margin-left: 10px;
+}
+.transaction-area {
+    height: 600px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    padding: 15px;
+}
+
+.transaction-area .search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction-area .search .search-trans {
+    position: relative;
+    width: 295px;
+}
+
+.search .search-trans button  {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: gray;
+}
+.search .search-trans input {
+    border: 1px solid #dee1e5;
+    padding: 7px 10px 7px 40px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.search .search-filter  {
+    background-color: transparent;
+    border-radius: 3px;
+    margin-block: auto;
+}
+
+.search .search-filter button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.transaction-list {
+    overflow: auto;
+    height: 500px;
+    margin-top: 20px;
+ }
+
+ .transaction-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+ }
+ .transaction-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+ }
+ .transaction-list::-webkit-scrollbar-thumb {
+    background: #e1136e;
+    border-radius: 5px;
+ }
+ 
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.transaction-item .trans-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.transaction-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.transaction-item .trans-info span {
+    display: block;
+    font-size: 13px;
+}
+
+.transaction-item .trans-info span.trans-type {
+    font-weight: 600;
+}
+
+.transaction-item .trans-data span {
+    display: block;
+    font-size: 13px;
+}
+.transaction-item .trans-data span.trans-amount {
+    font-weight: bold;
+    color: green;
+}
+
+.transaction-item .trans-data span.trans-amount.trans-out {
+    color: red;
+}
+
