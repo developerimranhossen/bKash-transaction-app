@@ -173,7 +173,9 @@ body {
     font-weight: bold;
     color: green;
 }
-
+.transaction-item .trans-data span.not-cash-in {
+    color: red;
+}
 .transaction-item .trans-data span.trans-amount.trans-out {
     color: red;
 }
@@ -266,6 +268,3 @@ body {
     transition: background 0.3s;
 }
 
-button:hover {
-    background: #218838;
-}
